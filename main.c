@@ -16,5 +16,13 @@ int main()
     stackPrint(pStack);
     stringFree(stackPop(pStack));
     stackFree(pStack);
+
+    char *pString2 = stringAlloc(10);
+    stringFill(pString2, 10);
+
+    char string3[] = "Hello World";
+    stringFill(string3, 10);
+
+
     return 0;
 }
